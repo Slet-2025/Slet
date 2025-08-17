@@ -17,6 +17,9 @@
     },
     "com.acchosen.vr-stage-lighting": {
       "version": "2.8.0"
+    },
+    "dev.architech.protv": {
+      "version": "3.0.0-beta.28"
     }
   },
   "locked": {
@@ -50,6 +53,19 @@
       "version": "2.8.0",
       "dependencies": {
         "com.llealloo.audiolink": ">=0.3.1"
+      }
+    },
+    "dev.architech.protv": {
+      "version": "3.0.0-beta.28",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.4",
+        "dev.architech.sdk": ">=0.21.2 <1"
+      }
+    },
+    "dev.architech.sdk": {
+      "version": "0.21.3",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.4"
       }
     }
   }
