@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wooden Pier_22_MB
+* source:	https://sketchfab.com/3d-models/wooden-pier-22-mb-5ef5b1a858f34583858c0b711d569573
+* author:	Mehdi Shahsavan (https://sketchfab.com/ahmagh2e)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wooden Pier_22_MB" (https://sketchfab.com/3d-models/wooden-pier-22-mb-5ef5b1a858f34583858c0b711d569573) by Mehdi Shahsavan (https://sketchfab.com/ahmagh2e) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

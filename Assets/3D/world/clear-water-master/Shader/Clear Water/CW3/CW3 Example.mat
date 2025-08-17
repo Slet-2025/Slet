@@ -193,7 +193,7 @@ Material:
     - _VertexColorInt: 0
     - _VertexWaves: 1
     - _ViewSmoothness: 1
-    - _WaveSpeed: 0.63
+    - _WaveSpeed: 1
     - _WaveTex2UVSrc: 0
     - _WaveTexUVSrc: 0
     - _WindSpeed: 1
@@ -211,6 +211,6 @@ Material:
     - _SSSCol: {r: 1, g: 1, b: 1, a: 1}
     - _WaveA: {r: 2, g: 5, b: 0.53, a: 1}
     - _WaveB: {r: 1, g: 4, b: 0.3, a: 2}
-    - _WaveC: {r: 3, g: 6, b: 0.09, a: 1}
+    - _WaveC: {r: 3, g: 6, b: 1, a: 1}
     - _WindDirection: {r: 0.2, g: 0.5, b: 0, a: 1}
   m_BuildTextureStacks: []
