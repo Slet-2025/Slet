@@ -5,41 +5,23 @@ using VRC.Udon;
 
 public class ButtonPlaySound : UdonSharpBehaviour
 {
-    private AudioSource audioSource;
+    public AudioSource audioSource; // Drag your AudioSource here in the Inspector
 
-    [Header("Custom Settings")]
-    public float playDuration = 0f; // 0 = play full clip, otherwise stop after seconds
-
-    void Start()
+    public override void OnPickupUseDown()
     {
-        // Get AudioSource from same GameObject
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
+        if (audioSource != null)
         {
-            Debug.LogWarning("No AudioSource found on this object!");
+            audioSource.Play();
+            Debug.Log("Use button pressed -> Play audio");
         }
     }
 
-    public override void Interact()
+    public override void OnPickupUseUp()
     {
-        if (audioSource == null) return;
-
-        // Play from the beginning
-        audioSource.Stop();
-        audioSource.Play();
-
-        // If playDuration > 0, stop playback after that many seconds
-        if (playDuration > 0f)
-        {
-            SendCustomEventDelayedSeconds(nameof(StopSound), playDuration);
-        }
-    }
-
-    public void StopSound()
-    {
-        if (audioSource != null && audioSource.isPlaying)
+        if (audioSource != null)
         {
             audioSource.Stop();
+            Debug.Log("Use button released -> Stop audio");
         }
     }
 }
