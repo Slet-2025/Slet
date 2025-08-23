@@ -48,7 +48,7 @@ public class PictureFrameButtonLocal : UdonSharpBehaviour
 
         Material m = GetScreenMaterial();
         if (m != null) m.mainTexture = pictureList[pictureIndex];
-
+        Debug.Log("picture count = " + pictureCount);
         TriggerPageEvents(pictureCount);
     }
 

@@ -5,6 +5,9 @@ using VRC.Udon;
 public class EnvironmentControllerLocal : UdonSharpBehaviour
 {
     [Header("Objects to control")]
+    public string triggerInfo;
+
+    [Header("Objects to control")]
     public GameObject[] objectsToActivate;
     public GameObject[] objectsToDeactivate;
 
@@ -17,6 +20,11 @@ public class EnvironmentControllerLocal : UdonSharpBehaviour
     public Renderer targetRenderer2;   // optional
     public Material targetMaterial2;   // optional
     public Texture newTexture2;        // texture to apply
+
+    [Header("Texture swapping 3")]
+    public Renderer targetRenderer3;   // optional
+    public Material targetMaterial3;   // optional
+    public Texture newTexture3;        // texture to apply
 
     // --- Activate objects ---
     public void ActivateObjects()
@@ -84,6 +92,26 @@ public class EnvironmentControllerLocal : UdonSharpBehaviour
         Debug.Log("Swapped texture 2");
     }
 
+    // --- Swap texture 3 ---
+    public void SwapTexture3()
+    {
+        if (newTexture3 == null) return;
+
+        if (targetRenderer3 != null)
+        {
+            foreach (Material mat in targetRenderer3.materials)
+            {
+                if (mat != null) mat.mainTexture = newTexture3;
+            }
+        }
+        else if (targetMaterial3 != null)
+        {
+            targetMaterial3.mainTexture = newTexture3;
+        }
+
+        Debug.Log("Swapped texture 3");
+    }
+
     // --- Execute all actions at once ---
     public void ExecuteAll()
     {
@@ -91,6 +119,7 @@ public class EnvironmentControllerLocal : UdonSharpBehaviour
         DeactivateObjects();
         SwapTexture1();
         SwapTexture2();
+        SwapTexture3();
         Debug.Log("All executed!");
     }
 }
