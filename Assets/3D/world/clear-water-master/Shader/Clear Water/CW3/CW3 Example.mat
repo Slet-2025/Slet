@@ -8,10 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CW3 Example
-  m_Shader: {fileID: 4800000, guid: 076487c368443e148af23c5f3946313e, type: 3}
+  m_Shader: {fileID: 10708, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - 
   - _BAKERY_MONOSH
   - _LIGHTMAPSPECULAR
   - _NORMALMAP
@@ -22,14 +24,11 @@ Material:
   - _USE_REFRACTION
   - _USE_WAVES
   - _VRCLV
-  m_InvalidKeywords:
-  - 
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -84,7 +83,7 @@ Material:
         m_Scale: {x: 0.2, y: 0.2}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 94cb7dcb3f901f5459b3b2431987211a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -175,6 +174,7 @@ Material:
     - _SSSPow: 1
     - _SSSShadowStrength: 1
     - _SecondaryUVSource: 0
+    - _Shininess: 0.078125
     - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 0
